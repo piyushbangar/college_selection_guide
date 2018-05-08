@@ -1,0 +1,121 @@
+/**
+ * Demo styles
+ */
+/* apply a natural box layout model to all elements */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #c0392b;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: normal;
+}
+p {
+  margin: 0 auto 20px;
+}
+.demoStrip {
+  background: #fff;
+  color: #666;
+  border: 5px solid #962d22;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 40px;
+}
+.demoStrip p:last-child {
+  margin-bottom: 0;
+}
+.demoStrip-header {
+  color: #81261d;
+  border-bottom: 1px solid #f3f3f3;
+  margin-bottom: 40px;
+}
+.demoStrip-header-title {
+  margin: 0 0 20px;
+}
+.demoLead {
+  font-size: 24px;
+}
+/*********************************************/
+/**
+ * Pattern Styles
+ */
+.form {
+  max-width: 600px;
+  padding: 0;
+}
+.form-control {
+  background-color: #fff;
+  color: #333;
+  line-height: normal;
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -moz-transition: border-color ease-in-out .15s, -moz-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+  border-color: #ddd;
+}
+.select {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.select:after,
+.select:before {
+  content: " ";
+  position: absolute;
+  right: 18px;
+  top: 64%;
+  margin-top: -4px;
+  border: 6px solid transparent;
+  border-top: 8px solid #cc0000;
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none;
+}
+.select:before {
+  top: 37%;
+  z-index: 10;
+  border-top: transparent;
+  border-bottom: 8px solid #cc0000;
+}
+.select-select {
+  outline: 0;
+  appearance: none;
+  cursor: pointer;
+  position: relative;
+  padding-right: 50px;
+  text-overflow: "";
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -moz-window-shadow: none;
+}
+.select-select:focus {
+  border-color: #999;
+}
